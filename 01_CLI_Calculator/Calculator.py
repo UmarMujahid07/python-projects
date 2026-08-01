@@ -1,3 +1,4 @@
+# cli-calculator in python
 def calculate(number_1, number_2, operation):
     if operation == "+":
         return number_1 + number_2
