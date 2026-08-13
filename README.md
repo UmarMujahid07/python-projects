@@ -18,6 +18,10 @@ Here is a list of mini-projects included in this repository:
 
 6. **[06_Titanic_EDA](./06_Titanic_EDA)**: An end-to-end Exploratory Data Analysis project on the Titanic dataset — data cleaning, survival-rate analysis by gender and class, and visualizations built with Matplotlib and Seaborn.
 
+7. **[07_Machine_Learning](./07_Machine_Learning)**: Fundamentals of core machine learning concepts — supervised vs. unsupervised paradigms, train-test splits, feature scaling, model validation techniques, and evaluation metrics.
+
+8. **[08_Vehicle_Resale_Price_Estimator](./08_Vehicle_Resale_Price_Estimator)**: An end-to-end regression machine learning pipeline predicting used car prices — featuring feature engineering (`Car_age`), One-Hot Encoding, model comparison (Linear Regression vs. Random Forest Regressor), 5-fold cross-validation, and feature importance analysis.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
