@@ -50,6 +50,11 @@ Predicting resale values accurately is essential for both buyers and sellers in 
 5. **Feature Importance:** Analyzed tree-based feature importances to identify key price drivers.
 
 ---
+## Model Evaluation & Visualizations
+
+| Actual vs Predicted | Feature Importance | Error Distribution |
+| :---: | :---: | :---: |
+| ![Actual vs Predicted](./actual_vs_predicted.png) | ![Feature Importance](./feature_importance.png) | ![Residuals](./residuals_distribution.png) |
 
 ## Performance Summary
 
