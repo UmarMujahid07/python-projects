@@ -1,37 +1,58 @@
 # FastAPI Basics
 
-An introduction to building web APIs with FastAPI — covering routing, path parameters, query parameters, and automatic interactive documentation.
+An introduction to building web APIs with FastAPI — covering routing, request validation with Pydantic, and database integration with SQLAlchemy.
+
+---
 
 ## What's Inside
 
-### `main.py`
-A simple 5-endpoint API demonstrating core FastAPI concepts:
+### 1. `main.py`
+A foundational 5-endpoint API demonstrating core FastAPI routing concepts:
+- **`GET /`** — Root endpoint returning a basic welcome message.
+- **`GET /books/{book_id}`** — Path parameter example retrieving dynamic values directly from the URL path.
+- **`GET /search`** — Query parameter example supporting optional filtering.
+- **`GET /greet/{name}`** — Path parameter example generating personalized responses.
+- **`GET /add`** — Query parameter example performing addition on required integer inputs.
 
-- **`GET /`** — a basic root endpoint returning a welcome message
-- **`GET /books/{book_id}`** — path parameter example; `book_id` is required and comes directly from the URL (e.g. `/books/5`)
-- **`GET /search`** — query parameter example with optional filters (e.g. `/search?title=Harry&author=Rowling`)
-- **`GET /greet/{name}`** — path parameter example that returns a personalized greeting
-- **`GET /add`** — query parameter example with two required integer inputs (e.g. `/add?a=5&b=3`)
+### 2. `pydantic_students.py`
+Demonstrates structured data modeling and payload validation using Pydantic `BaseModel`:
+- **`POST /books` & `GET /books`** — Endpoints for creating and fetching book records.
+- **`POST /students` & `GET /students`** — Endpoints for validating student details (including optional fields like `email`).
+
+### 3. `Database_tasks/`
+A full task management module integrating persistent SQLite database storage via SQLAlchemy ORM:
+- **`database.py`** — Handles database engine creation, session generation, and request dependency injection (`get_db`).
+- **`models.py`** — Defines the `TaskDB` database schema/table mapping.
+- **`main.py`** — Exposes REST API routes (`POST /tasks`, `GET /tasks`, `GET /tasks/pending`) backed by SQLite storage.
+
+---
 
 ## Key Concepts Covered
 
-- **Decorators** (`@app.get(...)`) — registering a function as a handler for a specific route and HTTP method
-- **Path parameters** — required values embedded directly in the URL (`{book_id}`, `{name}`)
-- **Query parameters** — optional or required values passed after `?` in the URL
-- **Type hints** — FastAPI automatically validates incoming data (e.g. rejecting non-integer input to `book_id`)
-- **Automatic documentation** — FastAPI generates an interactive API explorer at `/docs`, with no extra setup required
+- **Decorators (`@app.get`, `@app.post`)** — Binding HTTP verbs and URL paths to backend handler functions.
+- **Path & Query Parameters** — Parsing embedded path segments and URL search queries with type coercion.
+- **Pydantic Schemas** — Automatic request body validation and structured JSON serialization.
+- **SQLAlchemy ORM** — Mapping Python models to SQLite database tables and managing database sessions.
+- **Interactive Documentation** — Swagger UI automatically generated at `/docs`.
+
+---
 
 ## Tech Stack
 
 - Python
 - FastAPI
-- Uvicorn (ASGI server)
+- Pydantic
+- SQLAlchemy
+- SQLite
+- Uvicorn (ASGI Server)
+
+---
 
 ## How to Run
 
+### Install Dependencies
 ```bash
-pip install fastapi uvicorn
-uvicorn main:app --reload
-```
-
-Then visit `http://127.0.0.1:8000/docs` to explore and test each endpoint interactively.
+pip install fastapi uvicorn sqlalchemy
+### Install Dependencies
+```bash
+pip install fastapi uvicorn sqlalchemy
