@@ -22,7 +22,7 @@ Here is a list of mini-projects included in this repository:
 
 8. [08_Vehicle_Resale_Price_Estimator](https://github.com/UmarMujahid07/python-projects/blob/main/08_Vehicle_Resale_Price_Estimator): An end-to-end regression machine learning pipeline predicting used car prices — featuring feature engineering (`Car_age`), One-Hot Encoding, model comparison (Linear Regression vs. Random Forest Regressor), 5-fold cross-validation, and feature importance analysis.
 
-9. [09_FastAPI_basics](https://github.com/UmarMujahid07/python-projects/blob/main/09_FastAPI_basics): An introduction to building web APIs with FastAPI — covering routing, path and query parameters, type-hint-based validation, and FastAPI's automatic interactive documentation (`/docs`).
+9. [09_FastAPI_basics](https://github.com/UmarMujahid07/python-projects/blob/main/09_FastAPI_basics): An introduction to web API development with FastAPI — covering routing, path & query parameters, request body validation via Pydantic `BaseModel`, dynamic route ordering, and persistent SQLite database integration using SQLAlchemy ORM.
 
 ---
 
