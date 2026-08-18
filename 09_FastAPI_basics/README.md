@@ -25,6 +25,11 @@ A full task management module integrating persistent SQLite database storage via
 - **`models.py`** — Defines the `TaskDB` database schema/table mapping.
 - **`main.py`** — Exposes REST API routes (`POST /tasks`, `GET /tasks`, `GET /tasks/pending`) backed by SQLite storage.
 
+### 4. `FastAPI_authorization/`
+A JWT-based authentication module covering password hashing and secure login:
+- **`auth.py`** — Password hashing/verification (`bcrypt`) and JWT access token generation.
+- **`main.py`** — A `POST /login` endpoint that validates credentials and issues a signed JWT on success.
+
 ---
 
 ## Key Concepts Covered
@@ -53,6 +58,13 @@ A full task management module integrating persistent SQLite database storage via
 ### Install Dependencies
 ```bash
 pip install fastapi uvicorn sqlalchemy
-### Install Dependencies
+```
+
+### Run the Server
 ```bash
-pip install fastapi uvicorn sqlalchemy
+uvicorn main:app --reload
+```
+
+Then visit `http://127.0.0.1:8000/docs` to explore and test each endpoint interactively.
+
+---
