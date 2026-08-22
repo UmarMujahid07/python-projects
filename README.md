@@ -24,6 +24,8 @@ Here is a list of mini-projects included in this repository:
 
 9. [09_FastAPI_basics](https://github.com/UmarMujahid07/python-projects/blob/main/09_FastAPI_basics): An introduction to web API development with FastAPI — covering routing, path & query parameters, request body validation via Pydantic `BaseModel`, dynamic route ordering, and persistent SQLite database integration using SQLAlchemy ORM.
 
+10. [10_Todo_App_API](https://github.com/UmarMujahid07/python-projects/blob/main/10_Todo_App_API): A complete multi-user backend combining JWT authentication with database persistence — featuring secure password hashing, protected routes via dependency injection, and per-user data isolation enforced through a foreign-key relationship between users and their todos.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
