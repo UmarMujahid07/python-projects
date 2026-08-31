@@ -26,6 +26,10 @@ Here is a list of mini-projects included in this repository:
 
 10. [10_Todo_App_API](https://github.com/UmarMujahid07/python-projects/blob/main/10_Todo_App_API): A complete multi-user backend combining JWT authentication with database persistence — featuring secure password hashing, protected routes via dependency injection, and per-user data isolation enforced through a foreign-key relationship between users and their todos.
 
+11. [11_Chatbot_LLM](https://github.com/UmarMujahid07/python-projects/blob/main/11_Chatbot_LLM): An interactive AI chatbot interface built with Python and the Google Generative AI SDK (`google-generativeai`) — featuring multi-turn conversation memory using chat sessions, stream-based response rendering, and secure API key management via environment variables.
+
+12. [12_Function_calling](https://github.com/UmarMujahid07/python-projects/blob/main/12_Function_calling): An advanced LLM agent workflow implementing tool use and Function Calling with Google Gemini — mapping natural language requests dynamically to structured Python functions (weather lookup, tip calculation, stock quotes, and currency conversion) with automatic execution and schema inspection.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
