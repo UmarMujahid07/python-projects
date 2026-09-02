@@ -1,25 +1,25 @@
 # LLM Chatbot (Gemini API)
 
-A command-line chatbot built using Google's Gemini API — the first hands-on step into working with Large Language Models programmatically.
+A command-line chatbot built using Google's Gemini API — featuring multi-turn conversation memory using stateful chat sessions.
 
 ## What This Project Covers
 
 - **API Authentication** — securely loading an API key from a `.env` file using `python-dotenv`, keeping secrets out of version control
-- **Making LLM API calls** — using the `google-generativeai` SDK to send prompts and receive generated responses
-- **Interactive CLI loop** — a `while True` menu-style loop (same pattern used in earlier CLI projects) that takes user input and exits on command
-- **Error handling** — wrapping API calls in `try/except` to handle issues like invalid keys or network failures gracefully
+- **Stateful Multi-Turn Chat** — using `model.start_chat(history=[])` and `chat.send_message()` to persist conversation memory across turns
+- **Interactive CLI Loop** — a continuous terminal interface loop that takes user input and exits on command
+- **Error Handling** — wrapping API calls in `try/except` blocks to handle network or API issues gracefully
 
-## A Known Limitation (by design)
+## Conversation Context Memory
 
-This version of the chatbot does **not** retain conversation history — each message is sent to the model independently, with no memory of previous exchanges. For example, telling the bot your name in one message and asking for it in the next will not work, because the model has no context window carrying prior messages forward.
-
-This is intentional groundwork for the next step: adding conversation memory, so the model can maintain context across a multi-turn conversation.
+Unlike single-shot prompt generation, this chatbot maintains continuous context memory across user turns. Telling the bot your name in one turn allows it to accurately remember and reference your name in subsequent questions within the same session.
 
 ## Tech Stack
 
-- Python
-- Google Generative AI SDK (`google-generativeai`)
-- python-dotenv
+- **Python**: 3.x
+- **SDK**: Google Generative AI (`google-generativeai`)
+- **LLM**: Google Gemini 3.6 Flash (`gemini-3.6-flash`)
+- **Configuration**: `python-dotenv`
+
 
 ## How to Run
 
