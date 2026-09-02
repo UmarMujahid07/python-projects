@@ -30,6 +30,8 @@ Here is a list of mini-projects included in this repository:
 
 12. [12_Function_calling](https://github.com/UmarMujahid07/python-projects/blob/main/12_Function_calling): An advanced LLM agent workflow implementing tool use and Function Calling with Google Gemini — mapping natural language requests dynamically to structured Python functions (weather lookup, tip calculation, stock quotes, and currency conversion) with automatic execution and schema inspection.
 
+13. [13_LangChain](https://github.com/UmarMujahid07/python-projects/blob/main/13_LangChain): A multi-stage sequential LLM pipeline built using LangChain Expression Language (LCEL) and Google Gemini 3.6 Flash — featuring prompt template chaining, automated output parsing (`StrOutputParser`), story generation, single-sentence summarization, and Roman Urdu translation.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
