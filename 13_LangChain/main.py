@@ -9,7 +9,7 @@ load_dotenv()
 
 # Initialize the Gemini chat model with the correct API parameters
 language_model = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",
+    model="gemini-3.6-flash",
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
