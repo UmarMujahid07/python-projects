@@ -32,6 +32,8 @@ Here is a list of mini-projects included in this repository:
 
 13. [13_LangChain](https://github.com/UmarMujahid07/python-projects/blob/main/13_LangChain): A multi-stage sequential LLM pipeline built using LangChain Expression Language (LCEL) and Google Gemini 3.6 Flash — featuring prompt template chaining, automated output parsing (`StrOutputParser`), story generation, single-sentence summarization, and Roman Urdu translation.
 
+14. [14_LangChain_Memory](https://github.com/UmarMujahid07/python-projects/blob/main/14_LangChain_Memory): A stateful, session-isolated chat engine built using LangChain Expression Language (LCEL) and Google Gemini 3.6 Flash — utilizing `RunnableWithMessageHistory` and `InMemoryChatMessageHistory` with `MessagesPlaceholder` to manage multi-user session state and conversation context memory.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
