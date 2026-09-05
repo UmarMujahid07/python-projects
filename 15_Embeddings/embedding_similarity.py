@@ -9,7 +9,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # Generate vector embedding for a given text input
 def generate_embeddings(text):
     response = genai.embed_content(
-        model="models/text-embedding-004",  # Standard Google text embedding model
+        model="models/gemini-embedding-001",  # Standard Google text embedding model
         content=text 
     )
     return response['embedding']
