@@ -34,6 +34,8 @@ Here is a list of mini-projects included in this repository:
 
 14. [14_LangChain_Memory](https://github.com/UmarMujahid07/python-projects/blob/main/14_LangChain_Memory): A stateful, session-isolated chat engine built using LangChain Expression Language (LCEL) and Google Gemini 3.6 Flash — utilizing `RunnableWithMessageHistory` and `InMemoryChatMessageHistory` with `MessagesPlaceholder` to manage multi-user session state and conversation context memory.
 
+15. [15_Embeddings](https://github.com/UmarMujahid07/python-projects/blob/main/15_Embeddings): A modular vector embeddings and semantic search module built using Google Generative AI SDK (`google-generativeai`) and NumPy — demonstrating high-dimensional text vectorization (`models/gemini-embedding-001`), pairwise cosine similarity evaluation, and document ranking for vector retrieval.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
