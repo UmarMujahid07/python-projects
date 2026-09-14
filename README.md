@@ -36,6 +36,8 @@ Here is a list of mini-projects included in this repository:
 
 15. [15_Embeddings](https://github.com/UmarMujahid07/python-projects/blob/main/15_Embeddings): A modular vector embeddings and semantic search module built using Google Generative AI SDK (`google-generativeai`) and NumPy — demonstrating high-dimensional text vectorization (`models/gemini-embedding-001`), pairwise cosine similarity evaluation, and document ranking for vector retrieval.
 
+16. [16_RAG_Document_Ingestion](https://github.com/UmarMujahid07/python-projects/blob/main/16_RAG_Document_Ingestion): A production-grade document ingestion and preprocessing pipeline for Retrieval-Augmented Generation — featuring raw `.pdf` and `.txt` loading (`pypdf`), manual sliding window character chunking with overlap, and smart boundary-aware recursive splitting via `langchain-text-splitters`.
+
 ---
 
 Maintained by [@UmarMujahid07](https://github.com/UmarMujahid07)
